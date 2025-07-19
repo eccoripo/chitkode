@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChitKode - Cross-platform Coding Interview Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-container">
+                    <img src="assets/logo_c.png" alt="ChitKode Logo" class="nav-logo">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/eccoripo" class="nav-link" target="_blank">GitHub</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#donate" class="nav-link donate-btn">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="assets/logo.png" alt="ChitKode Logo" class="hero-logo-img">
+                </div>
+                <h1 class="hero-title">Master coding interviews with AI assistance</h1>
+                <p class="hero-description">
+                    A cross-platform desktop application for practicing coding interviews, built with Electron and
+                    React.
+                    Features modern UI, Monaco Editor integration, and AI-powered code analysis with Local LLM and
+                    Gemini API support.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="download-btn primary">Download ↓</a>
+                    <a href="#features" class="secondary-btn">Explore features →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Modern UI Design</h3>
+                    <p>Undetectable interface perfect for screen sharing during interviews</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Monaco Editor</h3>
+                    <p>Professional code editing experience with syntax highlighting</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Local LLM and Gemini API support for intelligent code assistance</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cross-Platform</h3>
+                    <p>Available for Windows and macOS with seamless experience</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Stealth Mode</h3>
+                    <p>Toggle visibility and transparency for ultimate discretion</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Voice Recording</h3>
+                    <p>Voice-to-text capabilities for hands-free interaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Download ChitKode</h2>
+            <div class="platform-selector">
+                <a href="#" class="platform-option coming-soon" data-platform="mac">
+                    <svg fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="platform-icon"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z">
+                        </path>
+                    </svg>
+                    <span>macOS</span>
+                    <span class="coming-soon-badge">Coming Soon</span>
+                </a>
+                <a href="#" class="platform-option" data-platform="windows">
+                    <svg fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="platform-icon"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z">
+                        </path>
+                    </svg>
+                    <span>Windows</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="assets/logo.png" alt="ChitKode Logo" class="footer-logo">
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/eccoripo" target="_blank">GitHub</a>
+                    <a href="#download">Download</a>
+                    <a href="#donate">Donate</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChitKode. Built with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
