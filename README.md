@@ -1,14 +1,15 @@
 # ChitKode Website
 
-A clean, modern website for the ChitKode desktop application, inspired by the Ollama website design.
+A clean, modern website for the ChitKode desktop application, featuring a dark theme and professional design.
 
 ## Features
 
-- **Clean Design**: Modern, minimalist design similar to Ollama's website
+- **Dark Theme**: Professional dark theme with excellent contrast
 - **Responsive**: Fully responsive design that works on all devices
 - **Smooth Animations**: Subtle animations and transitions for better UX
 - **Fast Loading**: Optimized for quick loading times
 - **SEO Ready**: Proper meta tags and structure for search engines
+- **Platform Selection**: Interactive download section with platform-specific options
 
 ## Customization
 
@@ -22,33 +23,37 @@ Replace the logo placeholder with your actual logo:
 
 ### Colors
 
-The website uses a blue color scheme. To change colors, update these CSS variables in `styles.css`:
+The website uses a dark color scheme. To change colors, update these CSS variables in `styles.css`:
 
-- Primary blue: `#3b82f6`
-- Dark blue: `#1d4ed8`
-- Text colors: `#1f2937`, `#6b7280`
+- Background: `#1a1a1a`
+- Secondary background: `#2a2a2a`
+- Borders: `#3a3a3a`, `#4a4a4a`
+- Text colors: `#ffffff`, `#a0a0a0`
 
 ### Links
 
 Update the following links in `index.html`:
 
-- GitHub repository link: Replace `yourusername/chitkode` with your actual GitHub username
-- Download links: Add actual download URLs for your Windows and macOS builds
+- GitHub repository link: Currently set to `https://github.com/eccoripo`
+- Download links: Currently set to GitHub releases for Windows
 - Donate link: Add your preferred donation platform URL
 
 ### Content
 
-- Update the hero description to match your app's features
-- Modify the features section to highlight your app's key capabilities
-- Update system requirements in the download section
+- Hero section showcases "Ultimate All-in-One AI Tool" with privacy-first messaging
+- Features section highlights 6 key capabilities including privacy, cloud integration, and multi-mode AI
+- Download section includes platform selection with Windows available and macOS coming soon
 
 ## File Structure
 
 ```
 chitkode-web/
 ├── index.html          # Main HTML file
-├── styles.css          # CSS styles
+├── styles.css          # CSS styles with dark theme
 ├── script.js           # JavaScript functionality
+├── assets/             # Logo images
+│   ├── logo.png        # Main logo for hero section
+│   └── logo_c.png      # Compact logo for navbar
 └── README.md           # This file
 ```
 
@@ -81,10 +86,11 @@ You can deploy this static site to any web hosting service:
 
 The website is optimized for performance:
 
-- Minimal JavaScript
-- Optimized CSS
+- Minimal JavaScript with smooth interactions
+- Optimized CSS with dark theme
 - Fast loading times
-- Mobile-friendly design
+- Mobile-friendly responsive design
+- Platform-specific download functionality
 
 ## License
 

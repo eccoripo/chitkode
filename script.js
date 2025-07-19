@@ -152,9 +152,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const platform = this.getAttribute('data-platform');
             console.log('Selected platform:', platform);
             
-            // You can add download logic here
-            // For now, just show an alert
-            alert(`Downloading ChitKode for ${platform}...`);
+            // Download logic
+            if (platform === 'windows') {
+                window.open('https://github.com/eccoripo/chitkode/releases/download/release.0.0.1/ChitKode.Setup.0.0.1.exe', '_blank');
+            } else if (platform === 'mac') {
+                alert('macOS version is coming soon! Windows version is currently available.');
+            }
         });
     });
 
