@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Platform selector functionality
     const platformOptions = document.querySelectorAll('.platform-option');
+    const downloadLinks = document.querySelectorAll('.download-link');
     
     platformOptions.forEach(option => {
         option.addEventListener('click', function(e) {
@@ -151,12 +152,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get the platform
             const platform = this.getAttribute('data-platform');
             console.log('Selected platform:', platform);
+        });
+    });
+
+    // Download links functionality
+    downloadLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const platform = this.getAttribute('data-platform');
+            console.log('Selected download option:', platform);
             
             // Download logic
-            if (platform === 'windows') {
+            if (platform === 'windows-github') {
                 window.open('https://github.com/eccoripo/chitkode/releases/download/release.0.0.1/ChitKode.Setup.0.0.1.exe', '_blank');
-            } else if (platform === 'mac') {
-                alert('macOS version is coming soon! Windows version is currently available.');
+            } else if (platform === 'windows-drive') {
+                window.open('https://drive.google.com/file/d/1EgInTjk8B-n7qyok5V35kyrfm2zWlHNJ/view?usp=sharing', '_blank');
             }
         });
     });

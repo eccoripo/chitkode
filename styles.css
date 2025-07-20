@@ -275,31 +275,32 @@ body {
 
 /* Download Section */
 .download {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: #1a1a1a;
 }
 
 .platform-selector {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
 }
 
 .platform-option {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 1.5rem;
-    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
     text-decoration: none;
     color: #ffffff;
     background: #2a2a2a;
     border: 1px solid #3a3a3a;
     transition: all 0.2s ease;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 200px;
+    min-height: 200px;
     position: relative;
 }
 
@@ -326,6 +327,12 @@ body {
     transform: none;
 }
 
+.windows-card {
+    min-height: 280px;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
 .coming-soon-badge {
     font-size: 0.7rem;
     color: #a0a0a0;
@@ -334,14 +341,196 @@ body {
 }
 
 .platform-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
 }
 
 .platform-option span {
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
+}
+
+/* Download Options Inside Windows Card */
+.download-options {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.download-options h4 {
+    color: #a0a0a0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.download-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.download-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 0.75rem;
+    position: relative;
+}
+
+.download-link:hover {
+    background: #2a2a2a;
+    border-color: #4a4a4a;
+    transform: translateY(-1px);
+}
+
+.download-link.recommended {
+    border-color: #4a4a4a;
+    background: #1a1a1a;
+}
+
+.download-link.recommended:hover {
+    border-color: #5a5a5a;
+    background: #2a2a2a;
+}
+
+.download-link-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.download-speed-tag {
+    font-size: 0.65rem;
+    color: #a0a0a0;
+    margin-left: auto;
+}
+
+
+
+.platform-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.platform-header h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.platform-header p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+.download-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #1a1a1a;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.download-option:hover {
+    border-color: #4a4a4a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.download-option:hover::before {
+    opacity: 1;
+}
+
+.download-option.recommended {
+    border-color: #4a4a4a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #1f1f1f 100%);
+}
+
+.download-option.recommended:hover {
+    border-color: #5a5a5a;
+}
+
+.download-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+    flex-shrink: 0;
+}
+
+.download-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.download-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.download-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.download-speed {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.recommended-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: linear-gradient(135deg, #4a4a4a 0%, #5a5a5a 100%);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    border: 1px solid #6a6a6a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Donation Section */
@@ -501,11 +690,84 @@ body {
     .platform-selector {
         flex-direction: column;
         align-items: center;
-        gap: 0.75rem;
+        gap: 1.5rem;
     }
     
     .platform-option {
-        min-width: 200px;
+        min-width: 280px;
+        min-height: 180px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .windows-card {
+        min-height: 240px;
+    }
+    
+    .platform-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    .download-options h4 {
+        font-size: 0.75rem;
+    }
+    
+    .download-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.7rem;
+    }
+    
+    .download-link-icon {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .download-speed-tag {
+        font-size: 0.6rem;
+    }
+    
+    .platform-section {
+        padding: 1.5rem;
+    }
+    
+    .download-options {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .download-option {
+        padding: 1.25rem;
+    }
+    
+    .download-icon-container {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .download-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .download-label {
+        font-size: 0.9rem;
+    }
+    
+    .download-speed {
+        font-size: 0.75rem;
+    }
+    
+    .recommended-badge {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .platform-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .platform-header p {
+        font-size: 0.8rem;
     }
     
     .donation-widget {
