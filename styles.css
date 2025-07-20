@@ -12,6 +12,7 @@ body {
     background-color: #1a1a1a;
     min-height: 100vh;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 /* Custom scrollbar */
@@ -84,7 +85,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 6px;
     border: 1px solid transparent;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -100,7 +101,7 @@ body {
     border-radius: 6px;
     transition: all 0.2s ease;
     border: 1px solid #3a3a3a;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .donate-btn:hover {
@@ -141,7 +142,7 @@ body {
 }
 
 .hero-title {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 0.75rem;
@@ -149,14 +150,14 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #a0a0a0;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .hero-description {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #a0a0a0;
     margin-bottom: 3rem;
     max-width: 600px;
@@ -178,7 +179,7 @@ body {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 1.1rem;
     transition: all 0.2s ease;
     border: none;
     cursor: pointer;
@@ -210,14 +211,18 @@ body {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
-    color: #a0a0a0;
+    border-radius: 6px;
     font-weight: 600;
-    font-size: 0.875rem;
-    transition: color 0.2s ease;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #3a3a3a;
 }
 
 .secondary-btn:hover {
-    color: #ffffff;
+    background: #3a3a3a;
+    border-color: #4a4a4a;
 }
 
 /* Container */
@@ -234,11 +239,11 @@ body {
 }
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .features-grid {
@@ -261,16 +266,16 @@ body {
 }
 
 .feature-card h3 {
-    font-size: 0.95rem;
-    font-weight: 600;
     color: #ffffff;
-    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .feature-card p {
     color: #a0a0a0;
+    font-size: 1.1rem;
     line-height: 1.6;
-    font-size: 0.8rem;
 }
 
 /* Download Section */
@@ -334,7 +339,7 @@ body {
 }
 
 .coming-soon-badge {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #a0a0a0;
     margin-top: 0.25rem;
     font-weight: 400;
@@ -349,7 +354,7 @@ body {
 
 .platform-option span {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 /* Download Options Inside Windows Card */
@@ -360,7 +365,7 @@ body {
 
 .download-options h4 {
     color: #a0a0a0;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
     text-align: center;
@@ -385,7 +390,7 @@ body {
     color: #ffffff;
     transition: all 0.2s ease;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 1rem;
     position: relative;
 }
 
@@ -412,7 +417,7 @@ body {
 }
 
 .download-speed-tag {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     color: #a0a0a0;
     margin-left: auto;
 }
@@ -546,7 +551,7 @@ body {
 
 .donation-description {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #a0a0a0;
     margin-bottom: 2rem;
     max-width: 600px;
@@ -573,7 +578,7 @@ body {
 
 .donation-benefits h3 {
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
@@ -585,7 +590,7 @@ body {
 
 .donation-benefits li {
     color: #a0a0a0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     padding-left: 0;
     line-height: 1.5;
@@ -634,7 +639,7 @@ body {
     color: #a0a0a0;
     text-decoration: none;
     transition: color 0.2s ease;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .footer-right a:hover {
@@ -649,7 +654,7 @@ body {
 
 .footer-bottom p {
     color: #a0a0a0;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -667,11 +672,15 @@ body {
     }
     
     .hero-title {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
     }
     
     .hero-description {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
     
     .hero-buttons {
@@ -685,6 +694,18 @@ body {
     
     .features-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+        font-size: 1rem;
     }
     
     .platform-selector {
@@ -708,13 +729,17 @@ body {
         width: 2.5rem;
     }
     
+    .platform-option span {
+        font-size: 1.2rem;
+    }
+    
     .download-options h4 {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     
     .download-link {
         padding: 0.4rem 0.6rem;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     
     .download-link-icon {
@@ -723,81 +748,20 @@ body {
     }
     
     .download-speed-tag {
-        font-size: 0.6rem;
-    }
-    
-    .platform-section {
-        padding: 1.5rem;
-    }
-    
-    .download-options {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .download-option {
-        padding: 1.25rem;
-    }
-    
-    .download-icon-container {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .download-icon {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .download-label {
-        font-size: 0.9rem;
-    }
-    
-    .download-speed {
-        font-size: 0.75rem;
-    }
-    
-    .recommended-badge {
-        font-size: 0.65rem;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .platform-header h3 {
-        font-size: 1.1rem;
-    }
-    
-    .platform-header p {
         font-size: 0.8rem;
-    }
-    
-    .donation-widget {
-        padding: 0.5rem;
     }
     
     .donation-description {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         padding: 0 1rem;
     }
     
-    .donation-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .donation-info {
-        padding: 1.5rem;
-    }
-    
     .donation-benefits h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     .donation-benefits li {
-        font-size: 0.8rem;
-    }
-    
-    .donation-widget {
-        padding: 0.5rem;
+        font-size: 1rem;
     }
     
     .footer-content {
@@ -813,11 +777,11 @@ body {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
     
     .section-title {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
     
     .nav-right {
