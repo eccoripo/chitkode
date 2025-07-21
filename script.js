@@ -1,18 +1,18 @@
 // Smooth scrolling for anchor links
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Smooth scrolling for all anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
+
     anchorLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 const offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
-                
+
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add scroll effect to navbar
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.style.background = '#1a1a1a';
             navbar.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2)';
@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add hover effects to download buttons
     const downloadButtons = document.querySelectorAll('.download-btn');
-    
+
     downloadButtons.forEach(button => {
-        button.addEventListener('mouseenter', function() {
+        button.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-2px)';
         });
-        
-        button.addEventListener('mouseleave', function() {
+
+        button.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0)';
         });
     });
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Track download button clicks
     const downloadLinks = document.querySelectorAll('a[href="#download"], .download-btn');
     downloadLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             trackEvent('download_button_clicked');
         });
     });
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Track GitHub link clicks
     const githubLinks = document.querySelectorAll('a[href*="github"]');
     githubLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             trackEvent('github_link_clicked');
         });
     });
@@ -72,14 +72,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Track donate button clicks
     const donateLinks = document.querySelectorAll('a[href="#donate"], .donate-btn');
     donateLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             trackEvent('donate_button_clicked');
         });
     });
 });
 
 // Add loading animation for better UX
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     document.body.classList.add('loaded');
 });
 
@@ -114,7 +114,7 @@ const observerOptions = {
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
+const observer = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
@@ -123,7 +123,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all cards for animation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.feature-card');
     cards.forEach(card => {
         observer.observe(card);
@@ -132,23 +132,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Platform selector functionality
     const platformOptions = document.querySelectorAll('.platform-option');
     const downloadLinks = document.querySelectorAll('.download-link');
-    
+
     platformOptions.forEach(option => {
-        option.addEventListener('click', function(e) {
+        option.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             // Check if this is a coming soon option
             if (this.classList.contains('coming-soon')) {
                 alert('macOS version is coming soon! Windows version is currently available.');
                 return;
             }
-            
+
             // Remove active class from all options
             platformOptions.forEach(opt => opt.classList.remove('active'));
-            
+
             // Add active class to clicked option
             this.classList.add('active');
-            
+
             // Get the platform
             const platform = this.getAttribute('data-platform');
             console.log('Selected platform:', platform);
@@ -157,17 +157,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Download links functionality
     downloadLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const platform = this.getAttribute('data-platform');
             console.log('Selected download option:', platform);
-            
+
             // Download logic
             if (platform === 'windows-github') {
-                window.open('https://github.com/eccoripo/chitkode/releases/download/release.0.0.2/ChitKode.Setup.0.0.1.exe', '_blank');
+                window.open('https://github.com/eccoripo/chitkode/releases/download/release.0.0.2.1/ChitKode.Setup.0.0.2.exe', '_blank');
             } else if (platform === 'windows-drive') {
-                window.open('https://drive.google.com/file/d/1mmw4w8RuX6PcLENKzIeDVKIQSymWQx75/view?usp=sharing', '_blank');
+                window.open('https://drive.google.com/file/d/1FE5tCEsFjuC0iXSIyVOT1dq8C1ZWNwhA/view?usp=sharing', '_blank');
             }
         });
     });
