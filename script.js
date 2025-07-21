@@ -165,9 +165,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Download logic
             if (platform === 'windows-github') {
-                window.open('https://github.com/eccoripo/chitkode/releases/download/release.0.0.2.1/ChitKode.Setup.0.0.2.exe', '_blank');
+                window.open('https://github.com/eccoripo/chitkode/releases/download/release.0.0.2.1/ChitKode.Setup.0.0.21.exe', '_blank');
             } else if (platform === 'windows-drive') {
-                window.open('https://drive.google.com/file/d/1FE5tCEsFjuC0iXSIyVOT1dq8C1ZWNwhA/view?usp=sharing', '_blank');
+                window.open('https://drive.google.com/file/d/12Gi92mBD95FWNu0uJUrfuMkiDecfdT0m/view?usp=sharing', '_blank');
             }
         });
     });
