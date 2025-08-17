@@ -1,0 +1,33 @@
+{
+  "name": "ChitKode - Cross-platform Coding Interview Practice",
+  "short_name": "ChitKode",
+  "description": "Ultimate All-in-One AI Tool - Free, Private, Powerful, Local-First",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#6fb87e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["productivity", "utilities", "education"],
+  "lang": "en",
+  "dir": "ltr"
+}
